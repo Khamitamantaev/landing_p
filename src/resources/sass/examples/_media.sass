@@ -1,0 +1,198 @@
+/*==========  Desktop First  ==========*/
+
+// @media screen and (max-width: 1826px)
+    
+
+// @media screen and (max-width: 1760px)
+    
+
+// @media screen and (max-width: 1600px)
+    
+
+// @media screen and (max-width: 1200px)
+    
+
+// @media screen and (max-width: 1124px)
+    
+
+// @media screen and (max-width: 1064px)
+    
+
+// @media screen and (max-width: 991px)
+    
+        
+// @media screen and (max-width: 840px)
+    
+    
+// @media screen and (max-width: 768px)
+    
+
+// @media screen and (max-width: 600px)
+    
+    
+// @media screen and (max-width: 450px)
+    
+    
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+// +media-breakpoint-up(sm)
+
+// // ≤768px
+// +media-breakpoint-up(md)
+
+// // ≤992px
+// +media-breakpoint-up(lg)
+
+// // ≤1200px
+// +media-breakpoint-up(xl)
+
+
+@media (max-width: 1199px)
+    .container
+        max-width: 960px
+    .offer
+        &-block 
+            background-position: center right -120px
+    .catalog
+        &-block  
+            justify-content: center
+            &-item 
+                max-width: 470px
+                &:nth-child(odd)
+                    margin-right: 10px
+    .blog
+        &-card 
+            // flex-basis: 50%
+        &-list 
+            justify-content: space-around
+            &__card 
+                margin-right: 30px
+                margin-left: 30px
+    .price
+        &-block 
+            justify-content: center
+            &__card 
+                margin: 20px
+    .step
+        flex-basis: 33%
+        &:before
+            display: none
+
+@media (max-width: 991px)
+    .container
+        max-width: 750px
+    .navbar
+        &__mobile, &__landline
+            display: none
+    .hero
+        background-size: 100%
+        background-position: top right 
+    .features
+        &-block 
+            &__item 
+                flex-basis: 50%
+    .catalog
+        &-block 
+            &-item 
+                &:nth-child(odd)
+                    margin-right: 0
+    .offer
+        &-block 
+            background: none
+            background-color: #fff
+            padding: 40px
+    .factory
+        &-block 
+            &__img
+                margin-right: 10px
+            &__text
+                p
+                    margin-top: 15px
+    
+@media (max-width: 768px)
+    .container
+        max-width: 100%
+        padding: 0px 20px
+    .offer
+        &__title    
+            font-size: 18px
+        &__subtitle
+            font-size: 16px
+    .form
+        &__row  
+            flex-direction: column
+        &__row-checkbox
+            flex-direction: row
+        &__group
+            flex-basis: 100%
+            width: 100%
+        &__input 
+            margin-bottom: 20px
+        &__policy
+            margin-left: 0
+            margin-top: 30px
+    .features
+        &-block 
+            &__item
+                flex-basis: 100%
+                margin-bottom: 50px
+    .step
+        flex-basis: 100%
+    .contacts
+        &-block 
+            &__item
+                flex-basis: 100%
+                margin-bottom: 30px
+        &__address
+            max-width: 200px
+            margin: auto 
+    .footer
+        &-block 
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+        &__contacts
+            margin-top: 30px
+            text-align: center
+
+
+@media (max-width: 576px)
+    .logo   
+        display: none
+    .button
+        font-size: 10px
+        &-o
+            font-size: 10px
+    .menu
+        top: 60px
+        &-button
+            height: 60px
+        &__nav
+            flex-direction: column
+        &__link
+            margin-bottom: 20px
+    .section
+        &-title 
+            font-size: 24px
+
+@media (max-width: 400px)
+    .form
+        &__row-checkbox
+            flex-direction: column
+            align-items: flex-start
+        &__checkbox
+            margin-bottom: 20px
+
+@media (max-width: 400px)
+    .price
+        &-block 
+            &__card
+                margin: 10px
+                
+            

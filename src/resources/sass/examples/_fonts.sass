@@ -1,0 +1,36 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+
+@include font('Roboto', normal, 400, '../fonts/roboto/roboto-regular-webfont.woff2')
+@include font('Roboto', italic, 400, '../fonts/roboto/roboto-italic-webfont.woff2')
+@include font('Roboto', normal, 700, '../fonts/roboto/roboto-bold-webfont.woff2')
+@include font('Roboto', italic, 700, '../fonts/roboto/roboto-bolditalic-webfont.woff2')
+
+@include font('ProximaNova-Semibold', normal, 600, '../fonts/ProximaNova/ProximaNova-Semibold.woff2')
+@include font('ProximaNova-Light', normal, 200, '../fonts/ProximaNova/ProximaNova-Light.woff2')
+// @include font('ProximaNova-Regular', normal, 400, '../fonts/ProximaNova/ProximaNova-Regular.woff2')
+// @include font('ProximaNova-Bold', normal, 700, '../fonts/ProximaNova/ProximaNova-Bold.woff2')
+
+
+@mixin bold 
+	font-family: 'ProximaNova-Semibold', sans-serif
+
+@mixin light  
+	font-family: 'ProximaNova-Light', sans-serif

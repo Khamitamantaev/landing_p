@@ -1,0 +1,209 @@
+/*base settings*/
+
+*
+	box-sizing: border-box
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+html 
+    height: 100%
+
+body
+	height: 100%
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	// line-height: 1.65
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden
+	color: $text
+img 
+	// display: block
+	max-width: 100%
+	height: auto 
+	
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+	font-weight: 300
+	margin: 0
+	// line-height: 1.65
+	text-transform: uppercase
+
+ul 
+	margin: 0
+	padding: 0
+	list-style: none
+
+p 
+    margin: 0
+
+.container
+    max-width: 1170px
+    margin: auto
+    +light
+
+.section
+	padding: 100px 0
+	&-title 
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
+		+bold 
+	&__title
+		margin-bottom: 100px
+
+.bg-secondary
+    background-color: $bg-secondary
+
+.button-o
+	border: 2px solid $blue
+	padding: 17px 22px
+	font-size: 12px
+	text-transform: uppercase
+	color: $blue
+	+bold 
+	background-color: #ffffff
+	text-decoration: none
+	
+
+.button
+	border: none
+	text-transform: uppercase
+	padding: 25px 45px
+	background-color: $blue
+	color: #ffffff
+	text-decoration: none
+	+bold
+	&:hover
+		cursor: pointer
+	
+.button
+	&-fitting 
+		color: $blue
+		background-color: #fff
+		border: none
+		cursor: pointer
+	&-add 
+		background-color: lighten($blue, 10%)
+		color: #fff
+		cursor: pointer
+	&-like 
+		background-color: $blue
+		height: 30px
+		width: 30px
+		border: none
+		cursor: pointer
+		
+.input
+	// box-sizing: border-box
+	height: 80px
+	padding-left: 30px
+	border: 1px solid #dddddd
+
+.checkbox
+	display: none
+	&:checked + label::before
+		background-color: $blue
+	&-label 
+		display: flex
+		align-items: center
+		margin-right: 40px
+		&:hover
+			cursor: pointer
+		&::before
+			content: ''
+			width: 30px
+			height: 30px
+			border: 1px solid #dddddd
+			margin-right: 20px
+
+.select
+	height: 80px
+	width: 100%
+	border: 1px solid #dddddd
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 20px
+		width: 20px
+		height: 20px
+		background: url('../img/caret.png') no-repeat center 
+	&:hover
+		cursor: pointer
+	&_checked
+		line-height: 80px
+		padding-left: 30px
+	&__dropdown
+		position: absolute
+		top: 80px
+		width: 100%
+		background-color: #fff
+		border: 1px solid #dddddd
+		display: none
+		&_open
+			display: block
+	&__option
+		padding: 20px
+		&:hover
+			background-color: $bg-secondary
+
+
+		
+
+
+	
+
+// Custom Sass / Remove before use
+
+// .container
+// 	max-width: 700px
+// 	padding:
+// 		right: $gutter/2
+// 		left: $gutter/2
+// 	margin:
+// 		left: auto
+// 		right: auto
+
+// .img-responsive
+// 	display: block
+// 	max-width: 100%
+// 	height: auto
+
+// .example-grid
+// 	display: grid
+// 	grid-gap: $gutter
+// 	grid-template-columns: 1fr 1fr
+// 	grid-template-areas: "left right"
+// 	> div:first-child
+// 		grid-area: left
+// 	> div:last-child
+// 		grid-area: right
+// 	+media-breakpoint-down(xs)
+// 		display: block
+// 		> div
+// 			padding: $gutter/2 0
+	
+// .example-img
+// 	width: 100%
+
+// .parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+// 	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)

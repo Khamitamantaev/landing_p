@@ -1,4 +1,11 @@
 {
     "/public/js/app.js": "/public/js/app.js",
-    "/public/css/app.css": "/public/css/app.css"
+    "/public/css/app.css": "/public/css/app.css",
+    "/public/images/caret.png": "/public/images/caret.png",
+    "/public/images/factory-img.png": "/public/images/factory-img.png",
+    "/public/images/favicon.png": "/public/images/favicon.png",
+    "/public/images/form-bg-calc.png": "/public/images/form-bg-calc.png",
+    "/public/images/form-bg-price.png": "/public/images/form-bg-price.png",
+    "/public/images/hero-bg.jpg": "/public/images/hero-bg.jpg",
+    "/public/css/reset.css": "/public/css/reset.css"
 }
