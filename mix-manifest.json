@@ -1,11 +1,11 @@
 {
     "/public/js/app.js": "/public/js/app.js",
-    "/public/css/app.css": "/public/css/app.css",
     "/public/img/caret.png": "/public/img/caret.png",
     "/public/img/factory-img.png": "/public/img/factory-img.png",
     "/public/img/favicon.png": "/public/img/favicon.png",
     "/public/img/form-bg-calc.png": "/public/img/form-bg-calc.png",
     "/public/img/form-bg-price.png": "/public/img/form-bg-price.png",
     "/public/img/hero-bg.jpg": "/public/img/hero-bg.jpg",
-    "/public/css/reset.css": "/public/css/reset.css"
+    "/public/css/reset.css": "/public/css/reset.css",
+    "/public/css/app.css": "/public/css/app.css"
 }

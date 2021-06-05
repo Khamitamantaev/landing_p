@@ -1,4 +1,9 @@
 @import 'grid';
-@import 'sections/navbar';
 
+@import 'fonts';
+
+//Настройки интерфейса
+
+@import 'interface';
 // Шапка сайта 
+@import 'sections/navbar';
