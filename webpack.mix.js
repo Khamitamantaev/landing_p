@@ -33,6 +33,7 @@ mix
       "./public/js/**/*.js",
       "./fonts/**/*.css",
       "./src/resources/index.html",
+      "./src/resources/sass/app.scss",
     ],
   });
 

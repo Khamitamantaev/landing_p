@@ -1,9 +1,16 @@
-@import 'grid';
+@import "grid";
 
-@import 'fonts';
+@import "fonts";
 
 //Настройки интерфейса
 
-@import 'interface';
-// Шапка сайта 
-@import 'sections/navbar';
+@import "interface";
+
+//Подключение цветов
+
+@import "colors";
+// Шапка сайта
+@import "sections/navbar";
+
+// Блок Hero
+@import "sections/hero";
